@@ -10,6 +10,9 @@
 		A52334751BB8806900CA2D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A52334741BB8806900CA2D6C /* main.m */; };
 		A523347D1BB880A600CA2D6C /* NSArray+RDArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A523347C1BB880A600CA2D6C /* NSArray+RDArray.m */; };
 		A52334801BCB131600CA2D6C /* NSString+RDString.m in Sources */ = {isa = PBXBuildFile; fileRef = A523347F1BCB131600CA2D6C /* NSString+RDString.m */; };
+		A52334831BCDD6E800CA2D6C /* LinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A52334821BCDD6E800CA2D6C /* LinkedListNode.m */; };
+		A52334891BCDD8BA00CA2D6C /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = A52334881BCDD8BA00CA2D6C /* LinkedList.m */; };
+		A58B3F951BCFE3BF00CF8BF6 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = A58B3F941BCFE3BF00CF8BF6 /* Stack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		A523347C1BB880A600CA2D6C /* NSArray+RDArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RDArray.m"; sourceTree = "<group>"; };
 		A523347E1BCB131600CA2D6C /* NSString+RDString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RDString.h"; sourceTree = "<group>"; };
 		A523347F1BCB131600CA2D6C /* NSString+RDString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RDString.m"; sourceTree = "<group>"; };
+		A52334811BCDD6E800CA2D6C /* LinkedListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkedListNode.h; path = AlgorithmsObjectiveC/LinkedListNode.h; sourceTree = "<group>"; };
+		A52334821BCDD6E800CA2D6C /* LinkedListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkedListNode.m; path = AlgorithmsObjectiveC/LinkedListNode.m; sourceTree = "<group>"; };
+		A52334871BCDD8BA00CA2D6C /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		A52334881BCDD8BA00CA2D6C /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		A58B3F931BCFE3BF00CF8BF6 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		A58B3F941BCFE3BF00CF8BF6 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,8 @@
 		A52334731BB8806900CA2D6C /* AlgorithmsObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				A58B3F921BCFE39F00CF8BF6 /* Stack */,
+				A52334861BCDD74300CA2D6C /* LinkedList */,
 				A52334741BB8806900CA2D6C /* main.m */,
 				A523347E1BCB131600CA2D6C /* NSString+RDString.h */,
 				A523347F1BCB131600CA2D6C /* NSString+RDString.m */,
@@ -70,6 +81,27 @@
 				A523347C1BB880A600CA2D6C /* NSArray+RDArray.m */,
 			);
 			path = AlgorithmsObjectiveC;
+			sourceTree = "<group>";
+		};
+		A52334861BCDD74300CA2D6C /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				A52334811BCDD6E800CA2D6C /* LinkedListNode.h */,
+				A52334821BCDD6E800CA2D6C /* LinkedListNode.m */,
+				A52334871BCDD8BA00CA2D6C /* LinkedList.h */,
+				A52334881BCDD8BA00CA2D6C /* LinkedList.m */,
+			);
+			name = LinkedList;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A58B3F921BCFE39F00CF8BF6 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				A58B3F931BCFE3BF00CF8BF6 /* Stack.h */,
+				A58B3F941BCFE3BF00CF8BF6 /* Stack.m */,
+			);
+			name = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58B3F951BCFE3BF00CF8BF6 /* Stack.m in Sources */,
+				A52334831BCDD6E800CA2D6C /* LinkedListNode.m in Sources */,
 				A523347D1BB880A600CA2D6C /* NSArray+RDArray.m in Sources */,
 				A52334751BB8806900CA2D6C /* main.m in Sources */,
+				A52334891BCDD8BA00CA2D6C /* LinkedList.m in Sources */,
 				A52334801BCB131600CA2D6C /* NSString+RDString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

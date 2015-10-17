@@ -7,6 +7,7 @@
 //
 
 #import "NSString+RDString.h"
+#import "Stack.h"
 
 @implementation NSString (RDString)
 
@@ -99,6 +100,100 @@
         [self printPhoneNumberMnemonicsUsingDictionary:map forDigitNo:digit + 1 result:result];
         [result deleteCharactersInRange:NSMakeRange(result.length - 1, 1)];
     }
+}
+
+/*
+ * Converts roman numeral represented as string to integer
+ */
+-(NSInteger) romanNumeralToInteger
+{
+    NSDictionary *dictionary = @{@"I": @1,
+                                 @"V": @5,
+                                 @"X": @10,
+                                 @"L": @50,
+                                 @"C": @100,
+                                 @"D": @500,
+                                 @"M": @1000
+                                 };
+    NSInteger result = 0;
+    for(NSInteger i = (self.length - 1); i >= 0; i--)
+    {
+        NSString *romanStringNo = [self substringWithRange: NSMakeRange(i, 1)];
+        NSNumber *romanNumber = [dictionary objectForKey: romanStringNo];
+        if(i != (self.length - 1))
+        {
+            NSString *nextStringNo = [self substringWithRange:NSMakeRange(i+1, 1)];
+            NSNumber *nextRomanNo = [dictionary objectForKey:nextStringNo];
+            if(romanNumber.integerValue < nextRomanNo.integerValue)
+            {
+                result = result - romanNumber.integerValue;
+            }
+            else
+            {
+                result = result + romanNumber.integerValue;
+            }
+        }
+        else
+        {
+            result = result + romanNumber.integerValue;
+        }
+    }
+    return result;
+}
+
+/*
+ * Returns integer value of a postfix expression
+ * 25+3*
+ */
+-(NSInteger) evaluatePostfixExpression
+{
+    Stack *stack = [[Stack alloc] initWithMaxSize:10];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    
+    for(NSInteger i = 0; i <  self.length; i++)
+    {
+        NSString *character = [self substringWithRange:NSMakeRange(i, 1)];
+        NSNumber *digit = [formatter numberFromString:character];
+        
+        if(digit) // if it is a digit, push on stack
+        {
+            [stack pushObject:digit];
+        }
+        else
+        {
+            NSNumber *obj2 = [stack pop];
+            NSNumber *obj1 = [stack pop];
+            if(obj1 && obj2)
+            {
+                NSNumber *result = [self evaluateExpressionWithObject : obj1 andObject: obj2 andOperand : character];
+                [stack pushObject:result];
+            }
+        }
+    }
+    NSNumber *result = [stack pop];
+    return result.integerValue;
+}
+
+-(NSNumber *) evaluateExpressionWithObject : (NSNumber *)obj1 andObject: (NSNumber *)obj2 andOperand : (NSString *)character
+{
+    if([character isEqualToString:@"+"])
+    {
+        return @(obj1.integerValue + obj2.integerValue);
+    }
+    if([character isEqualToString:@"-"])
+    {
+        return @(obj1.integerValue - obj2.integerValue);
+    }
+    if([character isEqualToString:@"*"])
+    {
+        return @(obj1.integerValue * obj2.integerValue);
+    }
+    if([character isEqualToString:@"/"])
+    {
+        return @(obj1.integerValue / obj2.integerValue);
+    }
+    
+    return nil;
 }
 
 @end

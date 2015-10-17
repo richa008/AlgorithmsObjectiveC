@@ -34,4 +34,14 @@
  */
 -(void) phoneNumberMnemonics;
 
+/*
+ * Converts roman numeral represented as string to integer
+ */
+-(NSInteger) romanNumeralToInteger;
+
+/*
+ * Returns integer value of a postfix expression
+ */
+-(NSInteger) evaluatePostfixExpression;
+
 @end
