@@ -44,4 +44,10 @@
  */
 -(NSInteger) evaluatePostfixExpression;
 
+/*
+ * Returns the length of the substring with maximum valid parenthesis
+ * e.g : ())((()())( returns 6
+ */
+-(NSInteger) maximumValidParanthesis;
+
 @end

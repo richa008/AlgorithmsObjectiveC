@@ -196,4 +196,46 @@
     return nil;
 }
 
+/*
+ * Returns the length of the substring with maximum valid parenthesis
+ * e.g : ())((()())( returns 6
+ */
+-(NSInteger) maximumValidParanthesis
+{
+    NSInteger result = 0;
+    NSInteger offset = 0;
+    Stack *stack = [[Stack alloc] initWithMaxSize:60];
+    
+    for(int i = 0; i < self.length; i++)
+    {
+        unichar character = [self characterAtIndex:i];
+        if(character == '(')
+        {
+            [stack pushObject:@(i)];
+        }
+        else
+        {
+            if([stack isEmpty])
+            {
+                offset = i + 1;
+            }
+            else
+            {
+                [stack pop];
+                if([stack isEmpty])
+                {
+                    result = MAX(result, i + 1 - offset);
+                }
+                else
+                {
+                    NSNumber *index = [stack peek];
+                    result = MAX(result, i - index.integerValue);
+                }
+            }
+        }
+    }
+    
+    return result;
+}
+
 @end
