@@ -50,4 +50,10 @@
  */
 -(NSInteger) maximumValidParanthesis;
 
+/*
+ * Can string be permuted to be a palindrome
+ * edified -> deified
+ */
+-(BOOL) canBePalindrome;
+
 @end

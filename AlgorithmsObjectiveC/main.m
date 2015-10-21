@@ -41,6 +41,8 @@ int main(int argc, const char * argv[]) {
         [tree preOrderTraversal];
         
         BOOL t = [tree isTreeSymmetric];*/
+        
+        BOOL t = [@"abaa" canBePalindrome];
     }
     return 0;
 }

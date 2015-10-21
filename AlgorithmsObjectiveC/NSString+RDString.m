@@ -238,4 +238,33 @@
     return result;
 }
 
+/*
+ * Can string be permuted to be a palindrome
+ * edified -> deified
+ *
+ * String can be permuted to be a palindrome if odd frequency is atmost 1
+ */
+-(BOOL) canBePalindrome
+{
+    NSInteger noOddFrequescies = 0;
+    NSCountedSet *set = [NSCountedSet set];
+
+    for(int i = 0; i < self.length; i++)
+    {
+        unichar c = [self characterAtIndex:i];
+        [set addObject:@(c)];
+    }
+    
+    NSEnumerator *enumerator = [set objectEnumerator];
+    NSNumber *num;
+    while(num = [enumerator nextObject])
+    {
+        if(([set countForObject:num] & 1) && ++noOddFrequescies > 1)
+        {
+            return NO;
+        }
+    }
+    return YES;
+}
+
 @end
