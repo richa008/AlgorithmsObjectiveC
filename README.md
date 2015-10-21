@@ -2,11 +2,10 @@
 
 Common algorithms solved in Objective C
 
-Topics
-
--Arrays
--Strings
--Linked List
--Binary Trees
--Hashtables
--Stacks
+<b>Topics</b><br>
+Arrays<br>
+Strings<br>
+Linked List<br>
+Binary Trees<br>
+Hashtables<br>
+Stacks<br>
