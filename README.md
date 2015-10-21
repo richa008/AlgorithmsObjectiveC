@@ -1,6 +1,6 @@
 # AlgorithmsObjectiveC
 
-Common algorithms solved in Objective C
+Common algorithms/problems solved in Objective C
 
 <b>Topics</b><br>
 
