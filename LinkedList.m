@@ -41,36 +41,6 @@
     }
 }
 
-/*
- * Reverse k sublists at a time. If length is not a multple of k, reverse
- */
--(void) reverseKSublists : (NSInteger) k
-{
-    LinkedListNode *current = self.head;
-    NSInteger count = 1;
-    while (current != nil) {
-        current = current.next;
-        count ++;
-    }
-  
-    if(k > count)
-    {
-        return;
-    }
-    
-    NSInteger reversableSublists = 0;
-    reversableSublists = count/k;
-        
-    current = self.head;
-    
-    while(current != nil)
-    {
-        
-    }
-    
-    
-}
-
 
 
 @end

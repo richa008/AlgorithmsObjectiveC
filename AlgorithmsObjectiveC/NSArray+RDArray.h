@@ -10,4 +10,11 @@
 
 @interface NSArray (RDArray)
 
+/*
+ * Finds the index of the integer larger than k in a sorted array
+ * {1, 23, 43, 43, 56, 78, 100}, if k = 50 -> returns 56
+ */
+-(NSInteger) findNextIntegerLargerThanK : (NSInteger ) k;
+
+
 @end
