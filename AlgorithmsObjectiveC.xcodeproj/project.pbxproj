@@ -15,6 +15,7 @@
 		A58B3F951BCFE3BF00CF8BF6 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = A58B3F941BCFE3BF00CF8BF6 /* Stack.m */; };
 		A58B3F991BD7E76D00CF8BF6 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A58B3F981BD7E76D00CF8BF6 /* BinaryTreeNode.m */; };
 		A58B3F9C1BD7E86400CF8BF6 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = A58B3F9B1BD7E86400CF8BF6 /* BinaryTree.m */; };
+		A58B3FA11BDC237200CF8BF6 /* Problems.m in Sources */ = {isa = PBXBuildFile; fileRef = A58B3FA01BDC237200CF8BF6 /* Problems.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		A58B3F981BD7E76D00CF8BF6 /* BinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BinaryTreeNode.m; path = AlgorithmsObjectiveC/BinaryTreeNode.m; sourceTree = "<group>"; };
 		A58B3F9A1BD7E86400CF8BF6 /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 		A58B3F9B1BD7E86400CF8BF6 /* BinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
+		A58B3F9F1BDC237200CF8BF6 /* Problems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problems.h; sourceTree = "<group>"; };
+		A58B3FA01BDC237200CF8BF6 /* Problems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problems.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 		A52334731BB8806900CA2D6C /* AlgorithmsObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				A58B3F9E1BDC22DF00CF8BF6 /* OtherProblems */,
 				A58B3F961BD7E73C00CF8BF6 /* Trees */,
 				A58B3F921BCFE39F00CF8BF6 /* Stack */,
 				A52334861BCDD74300CA2D6C /* LinkedList */,
@@ -121,6 +125,15 @@
 			);
 			name = Trees;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		A58B3F9E1BDC22DF00CF8BF6 /* OtherProblems */ = {
+			isa = PBXGroup;
+			children = (
+				A58B3F9F1BDC237200CF8BF6 /* Problems.h */,
+				A58B3FA01BDC237200CF8BF6 /* Problems.m */,
+			);
+			name = OtherProblems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58B3FA11BDC237200CF8BF6 /* Problems.m in Sources */,
 				A58B3F951BCFE3BF00CF8BF6 /* Stack.m in Sources */,
 				A52334831BCDD6E800CA2D6C /* LinkedListNode.m in Sources */,
 				A523347D1BB880A600CA2D6C /* NSArray+RDArray.m in Sources */,

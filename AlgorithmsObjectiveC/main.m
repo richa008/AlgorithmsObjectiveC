@@ -13,6 +13,7 @@
 #import "Stack.h"
 #import "BinaryTree.h"
 #import "BinaryTreeNode.h"
+#import "Problems.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -42,7 +43,9 @@ int main(int argc, const char * argv[]) {
         
         BOOL t = [tree isTreeSymmetric];*/
         
-        BOOL t = [@"abaa" canBePalindrome];
+        Problems *p = [[Problems alloc] init];
+        NSLog(@"%@", [p elisGammaEncodeNumbers:@[@10, @11, @2, @13]]);
+        NSLog(@"%@", [p elisGammaDecodeString:@"000101000010110100001101"]);
     }
     return 0;
 }
