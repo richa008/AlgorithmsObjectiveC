@@ -56,4 +56,11 @@
  */
 -(BOOL) canBePalindrome;
 
+
+/*
+ * Returns true if string a palindrome
+ *
+ */
+-(BOOL) isPalindrome;
+
 @end

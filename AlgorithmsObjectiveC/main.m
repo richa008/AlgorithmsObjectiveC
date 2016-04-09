@@ -46,6 +46,9 @@ int main(int argc, const char * argv[]) {
         Problems *p = [[Problems alloc] init];
         NSLog(@"%@", [p elisGammaEncodeNumbers:@[@10, @11, @2, @13]]);
         NSLog(@"%@", [p elisGammaDecodeString:@"000101000010110100001101"]);
+        
+        NSLog(@"%hhd", @"A man, a plan, a canal, Panama".isPalindrome);
+         NSLog(@"%hhd", @"Ray is Ray".isPalindrome);
     }
     return 0;
 }

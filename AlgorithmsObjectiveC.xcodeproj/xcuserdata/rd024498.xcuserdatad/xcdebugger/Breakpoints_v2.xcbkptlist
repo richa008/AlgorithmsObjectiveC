@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmsObjectiveC/NSString+RDString.m"
-            timestampString = "466693758.376922"
+            timestampString = "481935599.239481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-reverseWordsInSentence"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmsObjectiveC/NSString+RDString.m"
-            timestampString = "466693758.376922"
+            timestampString = "481935599.239481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "-printPhoneNumberMnemonicsUsingDictionary:forDigitNo:result:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmsObjectiveC/NSString+RDString.m"
-            timestampString = "466693758.376922"
+            timestampString = "481935599.239481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "-printPhoneNumberMnemonicsUsingDictionary:forDigitNo:result:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmsObjectiveC/NSString+RDString.m"
-            timestampString = "466693758.376922"
+            timestampString = "481935599.239481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "-printPhoneNumberMnemonicsUsingDictionary:forDigitNo:result:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmsObjectiveC/NSString+RDString.m"
-            timestampString = "466693813.77415"
+            timestampString = "481935599.239481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "-evaluatePostfixExpression"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmsObjectiveC/NSString+RDString.m"
-            timestampString = "466816751.351818"
+            timestampString = "481935599.239481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "-maximumValidParanthesis"
             landmarkType = "5">
          </BreakpointContent>
@@ -177,6 +177,22 @@
             endingLineNumber = "44"
             landmarkName = "main()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgorithmsObjectiveC/NSString+RDString.m"
+            timestampString = "481935599.239481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-isPalindrome"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

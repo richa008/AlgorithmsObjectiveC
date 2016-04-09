@@ -13,6 +13,7 @@
 
 /*
  * Returns true if string is made up of only alphanumeric characters
+ *
  */
 -(BOOL) isAlphanumeric
 {
@@ -20,6 +21,18 @@
     NSRange range = [self rangeOfCharacterFromSet:unwantedCharacters];
     
     return (range.location == NSNotFound);
+}
+
+/*
+ * Returns true if string a palindrome
+ *
+ */
+-(BOOL) isPalindrome
+{
+    NSCharacterSet * charSet = [[NSCharacterSet alphanumericCharacterSet] invertedSet];
+    NSString *cleanString = [[[self componentsSeparatedByCharactersInSet:charSet] componentsJoinedByString:@""] lowercaseString];
+    NSString *reversedCleanString = [cleanString reverseString];
+    return [cleanString isEqualToString: reversedCleanString];
 }
 
 /*
